@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #020122;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="265.0" layoutX="11.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/85fac55eaa1bc241e1a0accedf51c0ff.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="313.0" layoutY="2.0" text="Clothify" textFill="#f2f3ae">
+         <font>
+            <Font name="Arial Black" size="55.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnEmployee" defaultButton="true" layoutX="337.0" layoutY="135.0" onAction="#btnEmployeeOnAction" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: F4442E;" text="Employee" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUser" defaultButton="true" layoutX="337.0" layoutY="211.0" onAction="#btnUserOnAction" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: F4442E;" text="User" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdmin" defaultButton="true" layoutX="337.0" layoutY="287.0" onAction="#btnAdminOnAction" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: F4442E;" text="Admin" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
