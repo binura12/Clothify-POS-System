@@ -1,18 +1,17 @@
 package repository.custom.impl;
 
-import dto.Admin;
-import entity.AdminEntity;
+import entity.UserEntity;
 import org.hibernate.Session;
-import repository.custom.AdminDao;
+import repository.custom.UserDao;
 import util.HibernateUtil;
 
-public class AdminDaoImpl implements AdminDao {
+public class UserDaoImpl implements UserDao {
     @Override
-    public boolean save(AdminEntity admin) {
+    public boolean save(UserEntity cashier) {
         Session session = HibernateUtil.getSession();
 
         session.beginTransaction();
-        session.persist(admin);
+        session.persist(cashier);
         session.getTransaction().commit();
         session.close();
 

@@ -1,7 +1,7 @@
 package service;
 
 import service.custom.impl.AdminServiceImpl;
-import service.custom.impl.CashierServiceImpl;
+import service.custom.impl.UserServiceImpl;
 import service.custom.impl.EmployeeServiceImpl;
 import util.ServiceType;
 
@@ -18,7 +18,7 @@ public class ServiceFactory {
             case admin:
                 return (T) new AdminServiceImpl();
             case cashier:
-                return (T) new CashierServiceImpl();
+                return (T) new UserServiceImpl();
             case employee:
                 return (T) new EmployeeServiceImpl();
         }

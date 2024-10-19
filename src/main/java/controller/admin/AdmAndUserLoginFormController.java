@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdmAndCashierLoginFormController {
+public class AdmAndUserLoginFormController {
 
     @FXML
     private Label btnDontHaveAnAcc;

@@ -1,7 +1,7 @@
 package repository;
 
 import repository.custom.impl.AdminDaoImpl;
-import repository.custom.impl.CashierDaoImpl;
+import repository.custom.impl.UserDaoImpl;
 import repository.custom.impl.EmployeeDaoImpl;
 import util.DaoType;
 
@@ -16,7 +16,7 @@ public class DaoFactory {
     public <T extends SuperDao> T getDaoType(DaoType type){
         switch (type){
             case cashier:
-                return (T) new CashierDaoImpl();
+                return (T) new UserDaoImpl();
             case admin:
                 return (T) new AdminDaoImpl();
             case employee:
