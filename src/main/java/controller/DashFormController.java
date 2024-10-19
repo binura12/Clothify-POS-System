@@ -24,7 +24,7 @@ public class DashFormController {
     void btnAdminOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/admin-login_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/adm_and_cashier_login_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);

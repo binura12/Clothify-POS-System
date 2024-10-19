@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #020122;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ForgetPswFormController">
+   <children>
+      <ImageView fitHeight="369.0" fitWidth="245.0" layoutX="17.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/85fac55eaa1bc241e1a0accedf51c0ff.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="-1.0" text="Clothify" textFill="#f2f3ae">
+         <font>
+            <Font name="Arial Black" size="55.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVerifyGmail" alignment="CENTER" layoutX="303.0" layoutY="122.0" prefHeight="37.0" prefWidth="256.0" promptText="Enter Email Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtVerifyPsw" alignment="CENTER" layoutX="303.0" layoutY="189.0" prefHeight="37.0" prefWidth="256.0" promptText="Enter New Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtVerifyOTP" alignment="CENTER" layoutX="303.0" layoutY="253.0" prefHeight="38.0" prefWidth="134.0" promptText="Enter OTP">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnVerify" layoutX="460.0" layoutY="253.0" onAction="#btnVerifyOnAction" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #00D4FF;" text="Verify">
+         <font>
+            <Font name="System Bold" size="17.5" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogin" layoutX="370.0" layoutY="319.0" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="134.0" style="-fx-background-color: #F4442E;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.5" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
