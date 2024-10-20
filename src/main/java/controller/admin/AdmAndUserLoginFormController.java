@@ -1,6 +1,7 @@
 package controller.admin;
 
 import com.jfoenix.controls.JFXButton;
+import controller.DashFormController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +10,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import service.ServiceFactory;
+import service.custom.AdminService;
+import util.ServiceType;
 
 import java.io.IOException;
 
@@ -55,6 +59,19 @@ public class AdmAndUserLoginFormController {
 
     @FXML
     void btnLoginOnAction(ActionEvent event) {
+        if (DashFormController.isAdmin){
+            String enteredGmail = txtGmailEnter.getText();
+            String enteredPassword = txtPasswordEnter.getText();
 
+            AdminService adminService = ServiceFactory.getInstance().getServiceType(ServiceType.admin);
+            boolean isAdminFound = adminService.loginAdmin(enteredGmail, enteredPassword);
+
+            if(isAdminFound){
+                System.out.println("Admin logged in successfully");
+            }else{
+                lblPswIncorrect.setText("Your password or email is incorrect");
+                lblPswIncorrect.setVisible(true);
+            }
+        }
     }
 }

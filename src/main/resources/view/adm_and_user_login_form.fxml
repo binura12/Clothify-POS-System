@@ -41,7 +41,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </JFXButton>
-                        <Label fx:id="lblPswIncorrect" layoutX="353.0" layoutY="263.0" text="Your Password was Incorrect" textFill="RED" />
+                        <Label fx:id="lblPswIncorrect" alignment="CENTER" layoutX="335.0" layoutY="262.0" text="Your password or email is incorrect" textFill="RED" />
                         <Label fx:id="btnForgotPassword" layoutX="377.0" layoutY="342.0" onMouseClicked="#btnForgotPswOnMouseClicked" text="Forgot Password ?" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />

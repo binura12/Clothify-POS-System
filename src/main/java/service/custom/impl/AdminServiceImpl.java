@@ -18,4 +18,10 @@ public class AdminServiceImpl implements AdminService {
 
         return false;
     }
+
+    @Override
+    public boolean loginAdmin(String enteredGmail, String enteredPassword) {
+        AdminDao adminDao = DaoFactory.getInstance().getDaoType(DaoType.admin);
+        return adminDao.loginAdmin(enteredGmail, enteredPassword);
+    }
 }
